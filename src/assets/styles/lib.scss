@@ -1,0 +1,104 @@
+.hr{border:0;border-bottom:1px solid #e4e7ed;margin-top: 15px;margin-bottom: 15px;}
+.ell{text-overflow:ellipsis; white-space:nowrap; overflow:hidden;}
+.cp{cursor: pointer;}
+.dib{display: inline-block;}
+.noborder{border:0;}
+.l{float: left;}
+.r{float: right;}
+.tc{text-align: center;}
+.bgwhite{background-color: #fff;}
+.grey{color: #9ba3af;}
+.red{color: #EE5B5B;}
+.sm{font-size: 12px;}
+.b{font-weight: 600;}
+.long{width: 100%;}
+.high{height: 100%;}
+.vm{vertical-align: middle;}
+.clear:after{display:table; content:''; clear:both;}
+.mt0{margin-top: 0}
+.pt5{padding-top: 5px;}
+.pr10{padding-right: 10px;}
+.ml0{margin-left: 0 !important;}
+.ml5{margin-left:5px;}
+.ml6{margin-left:6px;}
+.ml10{margin-left:10px;}
+.ml15{margin-left:15px;}
+
+.mr0{margin-right: 0 !important;}
+.mr5{margin-right:5px;}
+.mr8{margin-right:8px;}
+.mr10{margin-right:10px;}
+.mr15{margin-right: 15px;}
+.mr20{margin-right: 20px;}
+.mt5{margin-top:5px;}
+.mt10{margin-top:10px;}
+
+.mb5{margin-bottom:5px;}
+.mb6{margin-bottom:6px;}
+.mb10{margin-bottom:10px;}
+.mb15{margin-bottom:15px;}
+.mb20{margin-bottom:20px;}
+.mb30{margin-bottom:30px;}
+.half{display:inline-block;width: 50%;padding-right: 20px;vertical-align: top;}
+.two-fifth{
+  display:inline-block;
+  width: 40%;
+  padding-right: 20px;
+  vertical-align: top;
+  word-break: break-all;
+  word-wrap: break-word;
+}
+.three-fifth{
+  display:inline-block;
+  width: 60%;
+  padding-right: 20px;
+  vertical-align: top;
+  word-break: break-all;
+  word-wrap: break-word;
+}
+.trans{transition:all .3s;}
+.link{color:#096DEC;}
+.selectghost{
+  &.dao-select{
+    background: 0 !important;
+    height: 26px;
+  }
+  .dao-select-switch{
+    border:0 !important;
+    background: 0 !important;
+    transition: background-color .3s;
+  }
+  &.white .dao-select-switch-text{
+    color: #f1f3f6;
+  }
+  &.white .dao-select-switch.open{
+    background-color: rgba(61, 68, 79, 0.5) !important;
+  }
+  &.white .dao-select-switch:hover{
+    background-color: rgba(61, 68, 79, 0.5) !important;
+  }
+  .dao-select-switch.open{
+    box-shadow: none !important;
+  }
+}
+.one-fifth{
+  box-sizing: border-box;
+  display:inline-block;
+  width: 20%;
+  padding-right: 20px;
+  vertical-align: top;
+  word-break: break-all;
+  word-wrap: break-word;
+}
+.four-fifth{
+  box-sizing: border-box;
+  display:inline-block;
+  width: 80%;
+  padding-right: 20px;
+  vertical-align: top;
+  word-break: break-all;
+  word-wrap: break-word;
+}
+.link-light{
+  color:#0D95F7;
+}

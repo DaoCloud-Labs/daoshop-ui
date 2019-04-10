@@ -1,0 +1,119 @@
+html{
+  background-color: #dddddf;
+}
+body {
+  font-size: 14px;
+  color: #363636;
+  max-width: 960px;
+  margin: 0 auto;
+  background-color: #eee;
+}
+html,body{
+  height: 100%;
+  font-family: 'PingFang SC', 'Microsoft YaHei', 'Microsoft JhengHei',
+  'Source Han Sans SC' !important;
+}
+a{
+  text-decoration:none;
+  cursor: pointer;
+  color: inherit;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-appearance: none;
+}
+h1,
+ul,
+li,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+.el-carousel__item h3 {
+  color: #475669;
+  font-size: 14px;
+  opacity: 0.75;
+  line-height: 150px;
+  margin: 0;
+}
+
+.el-carousel__item:nth-child(2n) {
+   background-color: #99a9bf;
+}
+
+.el-carousel__item:nth-child(2n+1) {
+   background-color: #d3dce6;
+}
+.g-panel {
+  margin: 0 auto;
+  width: 790px;
+}
+
+.cate,
+.filter-opt,
+.save {
+  cursor: pointer;
+}
+.device{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.page{
+  flex-grow: 1;
+  height: 100%;
+  overflow: auto;
+  &.wrap {
+    padding: 20px 15px;
+  }
+}
+
+
+.header-edit {
+  float: right;
+  padding: 0 10px;
+  cursor: pointer;
+}
+
+
+.cast-list {
+  height: 560px;
+}
+
+.empty-states {
+  padding-top: 60px;
+  font-size: 18px;
+  color: #AEB0B7;
+  text-align: center;
+}
+
+.cast-list .goods-info {
+  width: 68%;
+}
+
+.item-selector {
+  width: 12%;
+}
+
+.icon-selector {
+  margin: 16px auto 0 auto;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  border: 2px solid #ccc;
+  cursor: pointer;
+}
+
+.selector-active {
+  background-color: #7a45e5;
+  border-color: #7a45e5;
+}
+
+.selector-active .icon {
+  position: absolute;
+  top: 2px;
+  left: 2px;
+}
