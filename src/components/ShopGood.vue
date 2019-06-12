@@ -9,13 +9,13 @@
         <span>¥<b>{{ item.price }}</b></span>
       </div>
       <span class="grey sm">{{ item.sales }}人付款</span>
-      <span class="save cp" @click="$store.dispatch('ADD_GOOD', item)">+</span>
+     <span class="save cp" :id="`item${index}`"  @click="$store.dispatch('ADD_GOOD', item)">+</span>
     </div>
   </li>
 </template>
 <script>
 export default {
-  props: ['item'],
+  props: ['item', 'index'],
 };
 </script>
 <style lang="scss">

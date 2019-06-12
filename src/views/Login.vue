@@ -26,6 +26,9 @@ export default {
       api.login(this.form).then((res) => {
         setLocal('token', res.data.id);
         setLocal('user', res.data.username);
+        if (res.data.error) {
+          return;
+        }
         this.$router.push('/');
       });
     },

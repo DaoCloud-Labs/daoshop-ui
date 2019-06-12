@@ -3,8 +3,7 @@
     <main-header msg="订单详情" path="/order"/>
     <div class="page">
       <ul class="cast-list" style="max-width: 960px; margin: 10px auto;">
-        <OrderGood v-for="(item, index) in orders" :item="item" :key="index"/>
-      </ul>
+        <OrderGood v-for="(item, index) in orders" :item="item" :index="index" :key="index"/>      </ul>
     </div>
 </div>
 </template>
