@@ -10,7 +10,7 @@
       </router-link>
     </main-header>
     <div class="page product-container">
-      <img :src="'http://BASE_URL' + item.img" class="long">
+      <img :src="'http://BASE_URL' + data.img" class="long">
       <h3>{{data.name}}</h3>
       <span class="save cp r" @click="$store.dispatch('ADD_GOOD', data)">+</span>
       <div class="shop-goods-price mb5">
