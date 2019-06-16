@@ -10,7 +10,7 @@
       </router-link>
     </main-header>
     <div class="page product-container">
-      <img :src="data.img" class="long">
+      <img :src="(process.env.NODE_ENV === 'development' ? 'https://dmp-n2.daocloud.io' : 'BASE_URL') + item.img" class="long">
       <h3>{{data.name}}</h3>
       <span class="save cp r" @click="$store.dispatch('ADD_GOOD', data)">+</span>
       <div class="shop-goods-price mb5">

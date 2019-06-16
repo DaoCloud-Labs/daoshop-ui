@@ -16,7 +16,7 @@
     <div class="page">
     <el-carousel height="180px">
       <el-carousel-item v-for="i in images" :key="i" class="tc">
-        <img height="180px" :src="i">
+        <img height="180px" :src="(process.env.NODE_ENV === 'development' ? 'https://dmp-n2.daocloud.io' : 'BASE_URL') + i">
       </el-carousel-item>
     </el-carousel>
     <ul class="clear" style="max-width: 960px;margin: 10px auto;">

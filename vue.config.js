@@ -1,4 +1,4 @@
-const proxy = 'http://172.16.20.104:31586';
+const proxy = 'https://dmp-n2.daocloud.io';
 
 module.exports = {
   devServer: {
