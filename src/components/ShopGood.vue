@@ -1,7 +1,7 @@
 <template>
   <li class="shop-goods-item">
     <div class="shop-goods-img">
-      <img class="long" v-bind:src="(process.env.NODE_ENV === 'development' ? 'https://dmp-n2.daocloud.io' : 'BASE_URL') + item.img">
+      <img class="long" v-bind:src="(process.env.NODE_ENV === 'development' ? 'https://dmp-n2.daocloud.io' : 'http://BASE_URL') + item.img">
     </div>
     <div class="shop-goods-info">
       <p class="shop-goods-title" @click="$router.push('/good/' + item.id)">{{ item.name }}</p>
