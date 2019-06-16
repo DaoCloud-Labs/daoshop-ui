@@ -1,4 +1,4 @@
-const proxy = 'https://dmp-n2.daocloud.io';
+const proxy = 'https://daoshop-ui.daocloud.io';
 
 module.exports = {
   devServer: {

@@ -5,7 +5,7 @@
       </div>
     </div>
     <div class="cast-goods-img">
-      <img class="long" v-bind:src="(process.env.NODE_ENV === 'development' ? 'https://dmp-n2.daocloud.io' : 'http://BASE_URL') + item.img">
+      <img class="long" v-bind:src="'http://BASE_URL' + item.img">
     </div>
     <div class="cast-goods-info">
       <p class="cast-goods-title">{{ item.name }}</p>
