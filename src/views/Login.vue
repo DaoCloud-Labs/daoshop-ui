@@ -13,14 +13,17 @@
       <el-button type="primary" class="long mb10" @click="onSubmit">登录</el-button>
       <br>
       <el-button plain class="long" @click="$router.push('/registry')">注册</el-button>
+      <SSO/>
     </div>
 </div>
 </template>
 <script>
 import * as api from '@/api';
 import { setLocal } from '@/utils/index';
+import SSO from '@/components/SSO.vue';
 
 export default {
+  components: { SSO },
   methods: {
     onSubmit() {
       api.login(this.form).then((res) => {
