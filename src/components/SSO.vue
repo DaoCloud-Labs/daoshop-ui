@@ -9,7 +9,7 @@
 import axios from 'axios';
 
 const sso = () => axios
-  .get('/user-center/get-dce-url', {
+  .get('/demo/user/v1/get-arch-url', {
     params: {
       redirect_uri: window.location.origin,
     },

@@ -17,13 +17,21 @@ const dceRedirct = () => {
     });
   } else {
     p = Axios
-      .get('/user-center/sso/oauth/token', {
-        headers: {
-          CODE: code[2],
+      .get('/demo/user/v1/get-arch-token', {
+        params: {
+          code: code[2],
+          redirect_uri: window.location.origin,
         },
       })
       .then(({ data }) => {
         localStorage.setItem('token', data.access_token);
+        return Axios.get('/demo/user/v1/get-arch-user', {
+          params: {
+            token: data.access_token,
+          },
+        });
+      }).then(({ data }) => {
+        localStorage.setItem('user', data.preferred_username);
       });
   }
   return p;
@@ -39,4 +47,5 @@ Vue.use(Components);
     store,
     render: h => h(App),
   }).$mount('#app');
+  router.push({ path: '/', query: {} });
 })();
